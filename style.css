@@ -1,0 +1,1040 @@
+*{margin: 0;
+padding: 0;}
+body{background: #0B0016;
+overflow-x: hidden;}
+a{color: white;
+text-decoration: none;}
+
+/*Home Cabeçalho */
+#home_inicio{background-image: url(h1_hero1.jpg);
+height: 136.3vh;
+background-color: rgba(0, 0, 0, 45%);
+background-blend-mode: multiply;}
+
+#home_inicio header{height: 8%;
+padding-top: 2.8%;}
+
+.logo{vertical-align: middle;
+margin-bottom: 1.5%;
+padding-left: 5%;}
+
+.numero{padding: 0 1.5% 0 46%;
+font-size: 107%;
+font-weight: 450;
+font-family: "Questrial", sans-serif;}
+
+.butao{border: solid 1px #D6A04C;
+background-color: #D6A04C;
+padding: 0.9% 1.7% 0.9% 1.7%;
+font-family: "Questrial", sans-serif;
+transition: 0.3s;}
+
+.butao:hover{transition: 0.3s;
+background-color: transparent;
+border: solid 1px #D6A04C;
+color: #D6A04C;}
+
+.span_menu{border-top: solid 2px white;
+border-bottom: solid 2px white;
+width: 35px;
+height: 10px;
+position: absolute;
+margin-top: 1.8%;
+margin-left: 3%;}
+
+.menu{position: absolute;
+top: 9%;
+left: 88.5%;
+z-index: 7;
+width: 2.5vw;
+height: 3.5vh;
+opacity: 0;
+cursor: pointer;}
+
+.menu_principal{position: absolute;
+height: 100vh;
+display: inline-block;
+width: 24.5vw;
+background-color: #111111;
+left: 100%;
+}
+
+.menu_principal>div>svg{width: 4vw;
+height: 4vh;
+margin-top: 15%;
+margin-left: 6%;
+margin-bottom: 7vh;
+fill: white;}
+
+.fechar_menu{position: absolute;
+top: 7.5%;
+left: 102%;
+z-index: 4;
+height: 5vh;
+width: 5vw;
+opacity: 0;
+cursor: pointer;}
+
+.menu:checked~#home_inicio>.menu_principal{transform: translateX(-100%);
+z-index: 97;
+position: fixed;
+transition: 0.8s;}
+
+.menu:checked+.fechar_menu{transform: translateX(-7%);
+z-index: 99;
+position: fixed;
+transition: 0.8s;}
+
+.fechar_menu:checked{position: absolute;
+top: 8.7%;
+transform: translateX(4%);
+z-index: 4;
+height: 5vh;
+width: 5vw;
+transition: 0.8s;}
+
+.fechar_menu:checked+#home_inicio>.menu_principal{position: absolute;
+height: 100vh;
+display: inline-block;
+width: 25vw;
+left: 100%;
+transform: translateX(0%);
+transition: 0.8s;}
+
+.menu_principal>a{display: block;
+font-size: 1.4vw;
+font-family: "Questrial", sans-serif;
+margin-top: 4.3vh;
+margin-right: 1vw;
+text-align: center;}
+/*background-color: #111111;*/
+
+
+
+/**/
+#texto_home{display: inline-block;
+height: 29vh;
+width: 45vw;
+margin-top: 38vh;
+margin-left: 15.5vw;
+color: white;
+font-family: "Questrial", sans-serif;}
+
+#texto_home span{font-size: 1.1vw;
+line-height: 8vh;}
+
+#texto_home h1{font-weight: 400;
+font-size: 4.3vw;
+line-height: 11vh;}
+
+.play_btn svg{height: 35px;
+fill: #D6A04C;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+transition: 0.3s;}
+
+#play{position: absolute;
+top: 65%;
+right: 15%;
+color: white;
+font-family: "Cabin", sans-serif;
+font-size: 1.4vw;}
+
+.play_btn{vertical-align: middle;
+display: inline-block;
+width: 70px;
+height: 70px;
+background-color: white;
+border-radius: 50%;
+position: relative;
+transition: 0.5s;
+margin-left: 45px;}
+
+.play_btn::after{content: "";
+position: absolute;
+width: 72px;
+height: 72px;
+border: solid 1px #D6A04C;
+border-radius: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);}
+
+.play_btn::before{content: "";
+position: absolute;
+width: 120px;
+height: 120px;
+background-color: rgba(255, 255, 255, 10%);
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border-radius: 50%;}
+
+.play_btn:hover{background-color: #D6A04C;}
+.play_btn:hover svg{fill: white;}
+
+/**/
+.mouse_home{border-color:  1px solid #D6A04C;
+width: 10vw;
+height: 10vh;
+position: absolute;
+top: 120%;
+left: 11vw;}
+
+.mouse{display: inline-block;
+width: 40px;
+height: 40px;
+position: relative;
+margin-left: 45px;}
+
+.mouse svg{fill: #D6A04C;
+position: absolute;}
+
+#footer_div_architeture{width: 68.4vw;
+display: inline-block;
+background-color: #D6A04C;
+height: 16.7vh;
+margin-left: 30.5vw;
+margin-top: 35.9vh;
+padding: 4vh 4vw 0 0;
+box-sizing: border-box;}
+
+#footer_div_architeture p{display: inline-block;
+font-size: 1.5vw;
+font-family: "Cabin", sans-serif;
+margin-left: 3.5vw;
+color: white;}
+
+
+
+
+/*Sobre nós*/
+.aboutus{height: 143vh;}
+
+.aboutus>header{color: white;
+font-size: 227%;
+font-family: "Cabin", sans-serif;
+font-weight: 400%;
+height: 11%;
+padding-top: 6%;
+padding-left: 8.5%;
+padding-bottom: 2%;}
+
+.aboutus div{display: inline-block;
+width: 26.7%;
+color: white;
+font-family: "Cabin", sans-serif}
+
+.about1{font-size: 160%;
+margin-left: 15.5%;
+line-height: 140%;}
+
+.about1>img{margin-top: 16.5%;
+width: 100%;}
+
+.about2{font-size: 120%;
+margin-left: 8.2%;
+line-height: 120%;}
+
+.about2>img{margin-top: 15.5%;
+width: 100%;}
+
+.about2>a{border: solid 1px #D6A04C;
+background-color: transparent;
+padding: 4.5% 3.5% 4.5% 8%;
+font-family: "Questrial", sans-serif;
+transition: 0.3s;
+display: block;
+width: 30%;
+font-size: 90%;
+margin-top: 13%;
+transition: 0.3;}
+
+.about2>a:hover{border: solid 1px #D6A04C;
+background-color: #D6A04C;
+color: white;
+transition: 0.3s;}
+
+
+
+
+/*O que nós fazemos*/
+.whatwedo{height: 103vh;}
+
+.whatwedo>header{color: white;
+font-size: 280%;
+font-family: "Cabin", sans-serif;
+height: 16.5%;
+padding: 4% 0 0 8.8%}
+
+.whatwedo div{display: inline-block;
+width: 26.3%;
+color: white;
+font-family: "Cabin", sans-serif;
+font-weight: 150;
+transition: 0.4s;}
+
+.whatwedo a{font-size: 190%;
+font-weight: 400;}
+
+.whatwedo img{width: 100%;
+margin-bottom: 7%;}
+
+.whatwedo p{margin-top: 4.5%;}
+
+.blog1{margin-left: 8.6%;}
+.blog2{margin-left: 1.4%;}
+.blog3{margin-left: 1.4%;}
+
+.seta{position: absolute;
+width: 3%;
+margin-left: 11%;
+margin-bottom: 50%;}
+
+.blog1:hover{position: relative;
+transform: translateY(30px);
+transition: 0.4s;}
+
+.blog1:hover a{color: #D6A04C;
+transition: 0.2s;}
+
+.blog2:hover{position: relative;
+transform: translateY(30px);
+transition: 0.4s;}
+
+.blog2:hover a{color: #D6A04C;
+transition: 0.2s;}
+
+.blog3:hover{position: relative;
+transform: translateY(30px);
+transition: 0.4s;}
+
+.blog3:hover a{color: #D6A04C;
+transition: 0.2s;}
+
+
+
+
+/*Projects*/
+.projects{height: 155vh;}
+
+.projects>section{color: white;
+font-family: "Cabin", sans-serif;
+box-sizing: border-box;}
+
+.projects_plano_fundo>h2{font-family: "Questrial", sans-serif;
+-webkit-text-stroke: 1px #E9E3D9;
+-webkit-text-fill-color: transparent;
+font-size: 15vw;
+position: relative;
+padding-top: 9.6vh;
+padding-left: 10vw;}
+
+.projects_plano_fundo{background-color: #1E1E1E;
+height: 78.7%;
+font-family: "Questrial", sans-serif;}
+
+.projects>section>div{background-image: url(projects1.jpg);
+height: 90vh;
+width: 80vw;
+position: absolute;
+top: 414.4vh;
+left: 9.5vw;}
+
+.projects>section>div>div{background-color: #D6A04C;
+height: 32vh;
+width: 50vw;
+margin-top: 73vh;
+transition: 0.3s;}
+
+.text_projects{color: white;
+transition: 0.3s;
+font-family: "Cabin", sans-serif;
+padding: 5vh 5vw 0 5vw;
+box-sizing: border-box;
+width: 40vw;}
+
+.text_projects>h1{font-weight: 400;
+font-size: 2.3vw;
+margin-bottom: 4vh;}
+
+.text_projects>p{font-weight: 400;
+font-size: 1.3vw;}
+
+.architeture_projects{background-color: white;
+border-radius: 50%;}
+
+.architeture_projects+a{width: 15vw;
+height: 15vh;}
+
+.architeture_projects>a>svg{width: 2.8vw;
+height: 2.8vh;
+fill: white;
+position: absolute;
+top: 99%;
+left: 48%;
+transform: translate(-50%,-50%);
+transition: 0.3s;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 100%;
+padding: 3.4vh 1vw 3.4vh 1vw;}
+
+.projects>section>div>div:hover{background-color: #212121;
+transition: 0.3s;}
+
+.projects>section>div>div:hover .text_projects>h1{color: #D6A04C;
+transition: 0.3s;}
+
+.projects>section>div>div:hover .architeture_projects>a>svg{background-color: #D6A04C;}
+
+
+
+
+
+
+/*Por que nós*/
+#whyus{height: 85.7vh;}
+
+#whyus_lugar_img{margin-left: 8.5%;
+width: 47%;
+vertical-align: top;}
+
+#whyus_text{width: 30%;
+padding-top: 8%;
+margin-left: 2%;}
+
+#about3{width: 48%;
+padding-top: 14.5%;
+display: inline-block;
+top: 50%}
+
+#whyus div{display: inline-block;
+color: white;}
+
+#whyus img{width: 100%;}
+
+#titulo_why{font-size: 2.7vw;
+font-family: "Cabin", sans-serif;
+margin-bottom: 6%;}
+
+#texto_why{font-size: 2vw;
+font-family: "Cabin", sans-serif;
+font-weight: 100;
+line-height: 130%;
+margin-bottom: 16%;}
+
+#whyus a{color: #D6A04C;
+border: solid 1px #D6A04C;
+padding: 3.6% 7.5% 3.6% 7.5%;
+font-size: 1.2vw;
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+transition: 0.3s;}
+
+#whyus a:hover{border: solid 1px white;
+background-color: white;
+transition: 0.3s;}
+
+
+
+
+/*Pessoa aleátoria*/
+.pessoa{height: 90vh;
+background-color: #0A0A0A;
+width: 100%;}
+
+.pessoa .domeio{width: 70vw;
+height: 65%;
+display: inline-block;
+color: white;}
+
+.pessoa .img1{margin-left: 48.4%;
+margin-top: 5%;
+margin-bottom: 3%;
+width: 2.7vw;}
+
+.pessoa main{display: inline-block;
+width: 13.9vw;
+height: 100%;
+vertical-align: middle;}
+
+.text_pessoa{font-size: 1.6vw;
+font-family: "Questrial", sans-serif;
+font-weight: 400;
+margin-left: 11vw;
+margin-right: 11vw;
+text-align: center;
+margin-bottom: 2.5%;}
+
+.pessoa p+img{margin-left: 45%;}
+
+.apessoa{font-size: 1vw;
+font-family: "Cabin", sans-serif;
+margin-left: 27.5vw;
+margin-top: 2vh;}
+
+.seta1_pessoa svg{height: 5vh;
+width: 5vw;
+padding: 40vh 0 0 10vw;
+fill: #A4A6AE;
+transition: 0.2s;}
+
+.seta1_pessoa svg:hover{fill: white;
+transition: 0.2s;}
+
+.seta2_pessoa svg{height: 5vh;
+width: 5vw;
+padding-top: 40vh;
+fill: #A4A6AE;
+transition: 0.2s;}
+
+.seta2_pessoa svg:hover{fill: white;
+transition: 0.2s;}
+
+
+
+
+/*Design*/
+.design{height: 105vh;}
+
+.design>div{height: 42vh;
+border:#212529 2px solid;
+width: 80vw;
+margin-left: 9.5vw;
+color: white;
+transition: 1s;}
+
+.design>div>div{display: inline-block;
+height: 37.5vh;
+margin-top: 1.5%;}
+
+.texto_design{width: 60vw;
+padding: 7vh 7vw 0 18.2vw;
+box-sizing: border-box;}
+
+.img_archi{width: 5vh;
+margin-left: 2vw;
+vertical-align: top;}
+
+.text_archi{font-size: 2.3vw;
+font-family: "Questrial", sans-serif;}
+
+.mini_archi{font-size: 12px;
+font-family: "Cabin", sans-serif;}
+
+.design p{margin-bottom: 3vh;}
+
+.design>div+div{margin-top: 2.5%;}
+
+.design>div:hover{background-color: #1E1E1E;
+transition: 0.5s;}
+.design>div:hover .text_archi{color: #D6A04C;
+transition: 0.5s;}
+
+.seta_design{height: 37.5;
+width: 10vw;
+vertical-align: top;
+padding: 12vh 0 0 5.6vw;
+box-sizing: border-box;}
+
+.seta_design svg{width: 3vw;
+height: 3vh;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+padding: 3.1vh 0.7vw 3.1vh 0.7vw;
+fill: white;
+transition: 0.5s;}
+
+.design>div:hover svg{background-color: #D6A04C;
+transition: 0.5s;}
+
+
+
+
+/*Parte do footer do site*/
+/*Parte de cima- Rede sociais e tals*/
+.fim{height: 78vh;
+background-color: #1E1E1E;}
+
+.parte_de_cima_desfecho{height: 66vh;
+padding-top: 18.7vh;
+box-sizing: border-box;}
+
+.parte_de_cima_desfecho>div{display: inline-block;
+height: 33.5vh;}
+
+#imagem_desfecho{width: 18.5vw;}
+
+.desfecho_links{color: white;
+width: 9.5vw;
+vertical-align: top;
+margin-left: 3.4vw;}
+.desfecho_links p{font-family: "Cabin", sans-serif;
+font-size: 1.4vw;
+font-weight: 550;
+margin-bottom: 4.5vh;}
+.desfecho_links a{font-family: "Cabin", sans-serif;
+display: block;
+margin-bottom: 2.8vh;}
+
+.parte_de_cima_desfecho img{padding: 1.8vh 0 0 18vh;}
+
+.email_desfecho{width: 26vw;
+vertical-align: top;
+margin-left: 18.6vw;}
+
+.titulo_email_desfecho{font-size: 1.4vw;
+font-weight: 500;
+font-family: "Cabin", sans-serif;
+color: white;
+margin-bottom: 4vh;}
+
+.email_desfecho>p+p{font-family: "Cabin", sans-serif;
+color: #A4A6AE;
+margin-bottom: 2.2vh;}
+
+.email_desfecho input{height: 9.6vh;
+width: 20vw;
+border-radius: 5%;
+border: 0px solid}
+
+.fa-solid.fa-paper-plane{font-size: 1.6vw;
+background-color: #D6A04C;
+position: absolute;
+width: 5.9vw;
+height: 9.6vh;
+padding: 2.6vh 0 0 1.9vw;
+box-sizing: border-box;
+border-radius: 5%;
+right: 10vw;}
+
+.redes_sociais{display: block;
+margin-top: 4.5vh;}
+
+.email_desfecho a>svg{width: 2.5vw;
+height: 3vh;
+fill: white;
+transition: 0.3s;}
+
+.email_desfecho a>svg:hover{transform: scaleX(-1);
+fill: #D6A04C;
+transition: 0.3s;}
+
+.email_desfecho>input::placeholder{font-size: 1.2vw;
+font-family: "Cabin", sans-serif;
+padding-left: 1.3vw;}
+
+/*Parte de baixo do final-Considerações*/
+.parte_de_baixo_desfecho{width: 87vw;
+color: #A4A6AE;
+font-family: "Cabin", sans-serif;
+padding: 5.5vh 0 0 20vw;
+box-sizing: border-box;
+border-top: 1px solid #A4A6AE;
+margin-left: 5.5vw;}
+
+.parte_de_baixo_desfecho span>svg{fill: #D6A04C;
+height: 3vh;}
+
+.parte_de_baixo_desfecho a{color: #D6A04C;}
+
+
+
+
+
+/*about aba*/
+#about_inicio{background-image: url(h1_hero1.jpg);
+height: 70vh;
+width: 100%;
+background-position: center;
+background-color: rgba(0, 0, 0, 45%);
+background-blend-mode: multiply;}
+
+#about_inicio header{height: 8%;
+padding-top: 2.8%;}
+
+.menu:checked~#about_inicio>.menu_principal{left: 75.3%;
+z-index: 97;
+position: fixed;}
+
+.menu:checked+.fechar_menu{left: 76.75%;
+z-index: 99;
+position: fixed;}
+
+.fechar_menu:checked{position: absolute;
+top: 8.7%;
+left: 102%;
+z-index: 4;
+height: 5vh;
+width: 5vw;}
+
+.fechar_menu:checked+#about_inicio>.menu_principal{position: absolute;
+height: 100vh;
+display: inline-block;
+width: 25vw;
+left: 100%;}
+
+#meio_about{font-family: "Cabin", sans-serif;
+font-size: 1.2vw;
+color: white;}
+
+#texto_about{font-weight: 400;
+margin-left: 15.4vw;
+margin-top: 19vh;}
+
+#texto_about h1{font-weight: 400;
+font-size: 4.3vw;
+line-height: 11vh;
+margin-top: 2vh;}
+
+#whyus_about{height: 123.7vh;
+background-color: #1E1E1E;}
+
+#whyus_lugar_img{margin-left: 8.5%;
+width: 47%;
+vertical-align: top;}
+
+#whyus_text_about{width: 30%;
+margin-left: 2%;}
+
+#about3_about{width: 48%;
+padding-top: 1.5%;
+display: inline-block;
+top: 50%}
+
+#whyus_about div{display: inline-block;
+color: white;}
+
+#whyus_about img{width: 100%;}
+
+#titulo_why_about{font-size: 2.7vw;
+font-family: "Cabin", sans-serif;
+margin-bottom: 6%;}
+
+#texto_why_about{font-size: 2vw;
+font-family: "Cabin", sans-serif;
+font-weight: 100;
+line-height: 130%;
+margin-bottom: 16%;}
+
+#whyus_about a{color: #D6A04C;
+border: solid 1px #D6A04C;
+padding: 3.6% 7.5% 3.6% 7.5%;
+font-size: 1.2vw;
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+transition: 0.3s;}
+
+#whyus_about a:hover{border: solid 1px white;
+background-color: white;
+transition: 0.3s;}
+
+
+
+
+/*service aba*/
+#services_inicio{background-image: url(h1_hero1.jpg);
+height: 70vh;
+width: 100%;
+background-position: center;
+background-color: rgba(0, 0, 0, 45%);
+background-blend-mode: multiply;}
+
+#services_inicio header{height: 8%;
+padding-top: 2.8%;}
+
+.menu:checked~#services_inicio>.menu_principal{left: 75.3%;
+z-index: 97;
+position: fixed;}
+
+.menu:checked+.fechar_menu{left: 76.75%;
+z-index: 99;
+position: fixed;}
+
+.fechar_menu:checked{position: absolute;
+top: 8.7%;
+left: 102%;
+z-index: 4;
+height: 5vh;
+width: 5vw;}
+
+.fechar_menu:checked+#services_inicio>.menu_principal{position: absolute;
+height: 100vh;
+display: inline-block;
+width: 25vw;
+left: 100%;}
+
+#meio_services{font-family: "Cabin", sans-serif;
+font-size: 1.2vw;
+color: white;}
+
+#texto_services{font-weight: 400;
+margin-left: 15.4vw;
+margin-top: 19vh;}
+
+#texto_services h1{font-weight: 400;
+font-size: 4.3vw;
+line-height: 11vh;
+margin-top: 2vh;}
+
+
+
+
+/*projects aba*/
+#project_inicio{background-image: url(h1_hero1.jpg);
+height: 70vh;
+width: 100%;
+background-position: center;
+background-color: rgba(0, 0, 0, 45%);
+background-blend-mode: multiply;}
+
+#project_inicio header{height: 8%;
+padding-top: 2.8%;}
+
+.menu:checked~#project_inicio>.menu_principal{left: 75.3%;
+z-index: 97;
+position: fixed;}
+
+.menu:checked+.fechar_menu{left: 76.75%;
+z-index: 99;
+position: fixed;}
+
+.fechar_menu:checked{position: absolute;
+top: 8.7%;
+left: 102%;
+z-index: 4;
+height: 5vh;
+width: 5vw;}
+
+.fechar_menu:checked+#project_inicio>.menu_principal{position: absolute;
+height: 100vh;
+display: inline-block;
+width: 25vw;
+left: 100%;}
+
+#meio_project{font-family: "Cabin", sans-serif;
+font-size: 1.2vw;
+color: white;}
+
+#texto_project{font-weight: 400;
+margin-left: 15.4vw;
+margin-top: 19vh;}
+
+#texto_project h1{font-weight: 400;
+font-size: 4.3vw;
+line-height: 11vh;
+margin-top: 2vh;}
+
+#project_do_projects{height: 155vh;}
+
+#project_do_projects>section{color: white;
+font-family: "Cabin", sans-serif;
+box-sizing: border-box;}
+
+#project_do_projects>section>div{background-image: url(projects1.jpg);
+height: 90vh;
+width: 80vw;
+position: absolute;
+top: 102vh;
+left: 9.5vw;}
+
+#project_do_projects>section>div>div{background-color: #D6A04C;
+height: 32vh;
+width: 50vw;
+margin-top: 73vh;
+transition: 0.3s;}
+
+#project_do_projects>section>div>div:hover{background-color: #212121;
+transition: 0.3s;}
+
+#project_do_projects>section>div>div:hover .text_projects>h1{color: #D6A04C;
+transition: 0.3s;}
+
+#project_do_projects>section>div>div:hover .architeture_projects>a>svg{background-color: #D6A04C;}
+
+
+
+
+/*contato aba*/
+#contact_inicio{background-image: url(h1_hero1.jpg);
+height: 70vh;
+width: 100%;
+background-position: center;
+background-color: rgba(0, 0, 0, 45%);
+background-blend-mode: multiply;}
+
+#contact_inicio header{height: 8%;
+padding-top: 2.8%;}
+
+.menu:checked~#contact_inicio>.menu_principal{left: 75.3%;
+z-index: 97;
+position: fixed;}
+
+.menu:checked+.fechar_menu{left: 76.75%;
+z-index: 99;
+position: fixed;}
+
+.fechar_menu:checked{position: absolute;
+top: 8.7%;
+left: 102%;
+z-index: 4;
+height: 5vh;
+width: 5vw;}
+
+.fechar_menu:checked+#contact_inicio>.menu_principal{position: absolute;
+height: 100vh;
+display: inline-block;
+width: 25vw;
+left: 100%;}
+
+#meio_contact{font-family: "Cabin", sans-serif;
+font-size: 1.2vw;
+color: white;}
+
+#texto_contact{font-weight: 400;
+margin-left: 15.4vw;
+margin-top: 19vh;}
+
+#texto_contact h1{font-weight: 400;
+font-size: 4.3vw;
+line-height: 11vh;
+margin-top: 2vh;}
+
+
+
+
+/*contato aba*/
+#contato{width: 100%;
+height: 100vh;}
+
+#contato main{display: inline-block;}
+
+#contato>header{height: 15vh;
+width: 100%;}
+
+#contato h1{font-family: "Cabin", sans-serif;
+font-weight: 520;
+color: white;
+padding-top: 9.6vh;
+padding-left: 8.4vw;
+font-size: 1.9vw;}
+
+#get_in_touch{width: 54.3vw;
+height: 70vh;
+margin: 2vh 0 0 8.4vw;
+vertical-align: top;}
+
+#about_contact{width: 98%;
+background-color: transparent;
+border: 1px solid white;
+height: 31vh;
+padding-left: 1.5vw;
+box-sizing: border-box;}
+
+#contact input::placeholder{font-size: 1.2vw;
+font-family: "Cabin", sans-serif;
+font-weight: 400;}
+
+#name_contact{background-color: transparent;
+border: 1px solid white;
+width: 47%;
+height: 7vh;
+margin-top: 4.7vh;
+padding-left: 1.5vw;
+box-sizing: border-box;}
+
+#email_contact{background-color: transparent;
+border: 1px solid white;
+width: 47%;
+height: 7vh;
+margin-left: 1.75vw;padding-left: 1.5vw;
+box-sizing: border-box;}
+
+#subject_contact{background-color: transparent;
+border: 1px solid white;
+width: 98%;
+height: 7vh;
+margin-top: 4.7vh;
+margin-bottom: 11.3vh;padding-left: 1.5vw;
+box-sizing: border-box;}
+
+#contato a{padding: 2.8vh 3.95vw 2.8vh 3.95vw;
+background-color: #D6A04C;
+font-size: 1.26vw;
+transition: 0.4s;
+font-family: "Cabin", sans-serif;}
+
+#contato a:hover{background-color: transparent;
+border: 1px solid #D6A04C;
+color: #D6A04C;
+transition: 0.4s;}
+
+#informacoes{width: 23%;
+height: 70vh;
+margin-top: 2vh;
+color: white;
+font-family: "Cabin", sans-serif;
+margin-left: 7vw;}
+
+#informacoes svg{width: 4vw;
+height: 4vh;
+margin-top: 2vh;
+fill: white;}
+
+#informacoes>div>div{display: inline-block;
+width: 27vh;
+margin-bottom: 4.7vh;}
+
+#informacoes>div>div>h2{font-size: 1.1vw;}
+
+#informacoes>div>div>p{font-size: 1.05vw;}
+
+
+
+
+/**/
+#blog_inicio{background-image: url(h1_hero1.jpg);
+height: 70vh;
+width: 100%;
+background-position: center;
+background-color: rgba(0, 0, 0, 45%);
+background-blend-mode: multiply;}
+
+#blog_inicio header{height: 8%;
+padding-top: 2.8%;}
+
+.menu:checked~#blog_inicio>.menu_principal{left: 75.3%;
+z-index: 97;
+position: fixed;}
+
+.menu:checked+.fechar_menu{left: 76.75%;
+z-index: 99;
+position: fixed;}
+
+.fechar_menu:checked{position: absolute;
+top: 8.7%;
+left: 102%;
+z-index: 4;
+height: 5vh;
+width: 5vw;}
+
+.fechar_menu:checked+#blog_inicio>.menu_principal{position: absolute;
+height: 100vh;
+display: inline-block;
+width: 25vw;
+left: 100%;}
+
+#meio_blog{font-family: "Cabin", sans-serif;
+font-size: 1.2vw;
+color: white;}
+
+#texto_blog{font-weight: 400;
+margin-left: 15.4vw;
+margin-top: 19vh;}
+
+#texto_blog h1{font-weight: 400;
+font-size: 4.3vw;
+line-height: 11vh;
+margin-top: 2vh;}
